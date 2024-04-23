@@ -64,29 +64,6 @@ struct ApplicationSwitcher: View {
 class AppDelegate: NSObject, UIApplicationDelegate {
 
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//            AuthorizationCenter.shared.requestAuthorization { result in
-//                switch result {
-//                case .success:
-//                    print("Success")
-//                case .failure(let error):
-//                    print("error for screentime is \(error)")
-//                }
-//            }
-//
-//            _ = AuthorizationCenter.shared.$authorizationStatus
-//                .sink() {_ in
-//                switch AuthorizationCenter.shared.authorizationStatus {
-//                case .notDetermined:
-//                    print("not determined")
-//                case .denied:
-//                    print("denied")
-//                case .approved:
-//                    print("approved")
-//                @unknown default:
-//                    break
-//                }
-//            }
-//            FirebaseApp.configure()
             registerForPushNotifications()
             setUPFirebase(application) // set firebase notification
             return true
